@@ -1,15 +1,15 @@
 <template>
  <div class="container">
-  <img class="dec-1" src="../assets/form/dec1.png" />
-  <img class="dec-2" src="../assets/form/dec2.png" />
-  <img class="dec-3" src="../assets/form/dec3.png" />
-  <img class="dec-4" src="../assets/form/dec4.png" />
-  <img class="dec-5" src="../assets/form/dec5.png" />
-  <img class="dec-6" src="../assets/form/dec6.png" />
+  <img class="dec-1" src="../assets/form/dec1.svg" />
+  <img class="dec-2" src="../assets/form/dec2.svg" />
+  <img class="dec-3" src="../assets/form/dec3.svg" />
+  <img class="dec-4" src="../assets/form/dec4.svg" />
+  <img class="dec-5" src="../assets/form/dec5.svg" />
+  <img class="dec-6" src="../assets/form/dec6.svg" />
 
   <div class="cancel">
    <router-link to="/">
-    <img class="cross" src="../assets/form/cross.png"
+    <img class="cross" src="../assets/form/cross.svg"
    /></router-link>
   </div>
   <div class="head">

@@ -23,7 +23,7 @@
     </div>
    </div>
   </div>
-  <img src="../assets/frame10/pic1.png" />
+  <img src="../assets/frame10/pic1.svg" />
  </div>
 </template>
 

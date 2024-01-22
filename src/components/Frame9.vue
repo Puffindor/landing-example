@@ -1,9 +1,9 @@
 <template>
  <div class="container">
-  <img class="dec dec1" src="../assets/frame9/dec1.png" />
-  <img class="dec dec2" src="../assets/frame9/dec2.png" />
-  <img class="dec dec3" src="../assets/frame9/dec3.png" />
-  <img class="dec dec4" src="../assets/frame9/dec4.png" />
+  <img class="dec dec1" src="../assets/frame9/dec1.svg" />
+  <img class="dec dec2" src="../assets/frame9/dec2.svg" />
+  <img class="dec dec3" src="../assets/frame9/dec3.svg" />
+  <img class="dec dec4" src="../assets/frame9/dec4.svg" />
   <div class="pic2">
    <img src="../assets/frame9/pic2.png" />
    <span>«Мемфис» в графическом дизайне</span>

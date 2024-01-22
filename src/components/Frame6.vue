@@ -2,8 +2,8 @@
  <div class="container">
   <img src="../assets/pic-6.png" />
   <div class="right">
-   <img class="dec3" src="../assets/frame6/dec3.png" />
-   <img class="dec5" src="../assets/frame6/dec2.png" />
+   <img class="dec3" src="../assets/frame6/dec3.svg" />
+   <img class="dec5" src="../assets/frame6/dec2.svg" />
    <div class="dec4"><span>4</span></div>
    <h3>Коллаж</h3>
    <p>
@@ -61,7 +61,7 @@ h3 {
   align-items: center;
   width: 63px;
   height: 63px;
-  background-image: url(../assets/frame6/dec1.png);
+  background-image: url(../assets/frame6/dec1.svg);
   span {
    color: #292d35;
    margin-bottom: 6px;

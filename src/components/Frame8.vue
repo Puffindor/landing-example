@@ -13,7 +13,7 @@
    </p>
   </div>
 
-  <img src="../assets/frame8/dec1.png" />
+  <img src="../assets/frame8/dec1.svg" />
  </div>
 </template>
 

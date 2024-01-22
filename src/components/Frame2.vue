@@ -1,10 +1,10 @@
 <template>
  <div class="container">
   <img src="../assets/pic2-1.png" />
-  <div>
-   <img class="dec1" src="../assets/dec2-1.png" />
-   <img class="dec2" src="../assets/dec2-2.png" />
-   <img class="dec3" src="../assets/dec2-3.png" />
+  <div class="text">
+   <img class="dec1" src="../assets/dec2-1.svg" />
+   <img class="dec2" src="../assets/dec2-2.svg" />
+   <img class="dec3" src="../assets/dec2-3.svg" />
    <h2>О Чём вы узнаете на бесплатном вебинаре</h2>
    <h3>Что такое Мемфис?</h3>
    <p>
@@ -68,6 +68,20 @@
   }
  }
 }
+
+@media screen and (max-width: 400px) {
+ .container {
+  transform: translateX(-150%);
+  .text {
+   padding: 60px 16px 0px 20px;
+
+   .dec3 {
+    display: none;
+   }
+  }
+ }
+}
+
 @media screen and (max-width: 1280px) {
  .container {
   div {

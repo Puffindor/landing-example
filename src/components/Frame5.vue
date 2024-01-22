@@ -1,9 +1,9 @@
 <template>
  <div class="container">
   <div class="right">
-   <img class="dec2" src="../assets/frame5/dec2.png" />
-   <img class="dec3" src="../assets/frame5/dec3.png" />
-   <img class="dec5" src="../assets/frame5/dec4.png" />
+   <img class="dec2" src="../assets/frame5/dec2.svg" />
+   <img class="dec3" src="../assets/frame5/dec3.svg" />
+   <img class="dec5" src="../assets/frame5/dec4.svg" />
    <div class="dec4"><span>3</span></div>
    <h3>Экспериментальные материалы</h3>
    <p>
@@ -59,7 +59,7 @@ h3 {
   align-items: center;
   width: 63px;
   height: 63px;
-  background-image: url(../assets/frame5/dec1.png);
+  background-image: url(../assets/frame5/dec1.svg);
   span {
    color: #292d35;
    margin-bottom: 6px;

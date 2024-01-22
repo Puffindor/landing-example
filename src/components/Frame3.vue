@@ -1,8 +1,8 @@
 <template>
  <div class="container">
   <div class="left">
-   <img class="dec2" src="../assets/dec3-2.png" />
-   <img class="dec3" src="../assets/dec3-3.png" />
+   <img class="dec2" src="../assets/dec3-2.svg" />
+   <img class="dec3" src="../assets/dec3-3.svg" />
 
    <div class="dec4"><span>1</span></div>
 
@@ -72,7 +72,7 @@
 
   width: 63px;
   height: 63px;
-  background-image: url(../assets/dec3-4.png);
+  background-image: url(../assets/dec3-4.svg);
   span {
    margin-bottom: 6px;
   }

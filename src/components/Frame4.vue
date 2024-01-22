@@ -2,8 +2,8 @@
  <div class="container">
   <img src="../assets/pic-4.png" />
   <div class="right">
-   <img class="dec2" src="../assets/frame4/dec2.png" />
-   <img class="dec3" src="../assets/frame4/dec3.png" />
+   <img class="dec2" src="../assets/frame4/dec2.svg" />
+   <img class="dec3" src="../assets/frame4/dec3.svg" />
    <div class="dec4"><span>2</span></div>
    <h3>Необычные формы</h3>
    <p>
@@ -53,7 +53,7 @@ h3 {
  align-items: center;
  width: 63px;
  height: 63px;
- background-image: url(../assets/frame4/dec1.png);
+ background-image: url(../assets/frame4/dec1.svg);
  span {
   margin-bottom: 6px;
  }

@@ -1,9 +1,9 @@
 <template>
  <div class="container">
   <div class="right">
-   <img class="dec2" src="../assets/frame7/dec2.png" />
-   <img class="dec3" src="../assets/frame7/dec3.png" />
-   <img class="dec5" src="../assets/frame7/dec4.png" />
+   <img class="dec2" src="../assets/frame7/dec2.svg" />
+   <img class="dec3" src="../assets/frame7/dec3.svg" />
+   <img class="dec5" src="../assets/frame7/dec4.svg" />
    <div class="dec4"><span>5</span></div>
    <h3>Ирония</h3>
    <p>
@@ -62,7 +62,7 @@ h3 {
   align-items: center;
   width: 63px;
   height: 63px;
-  background-image: url(../assets/frame7/dec1.png);
+  background-image: url(../assets/frame7/dec1.svg);
   span {
    color: white;
    margin-bottom: 6px;

@@ -1,9 +1,9 @@
 <template>
  <div class="container">
   <div class="left">
-   <img class="star" src="../assets/star.png" />
-   <img class="dec1" src="../assets/frame1/dec1.png" />
-   <img class="dec2" src="../assets/frame1/dec2.png" />
+   <img class="star" src="../assets/frame1/star.svg" />
+   <img class="dec1" src="../assets/frame1/dec2.svg" />
+   <img class="dec2" src="../assets/frame1/dec1.svg" />
    <!-- <img class="back" src="../assets/frame1/background.png" /> -->
    <span class="date">12 апреля 16:00 - 18:30 • онлайн</span>
    <h1>Узнайте все о стиле Мемфис</h1>
@@ -85,7 +85,7 @@ export default {};
   .star {
    z-index: 1;
    position: absolute;
-   top: 0;
+   top: -10%;
    left: 0;
   }
   button {
@@ -127,21 +127,47 @@ export default {};
   }
  }
 }
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 400px) {
  .container {
+  .date {
+   display: block;
+   font-size: 18px;
+  }
   .left {
-   padding: 50px 0px 0px 50px;
+   padding: 60px 16px 60px;
+   p {
+    font-size: 18px;
+   }
+   button {
+    width: 100%;
+    margin-top: 48px;
+    height: 9%;
+    padding: 22px 24px;
+    font-size: 16px;
+   }
+  }
+  .right {
+   display: none;
   }
  }
- .dec1 {
-  position: absolute;
-  right: 5%;
-  top: 5%;
- }
- .dec2 {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
- }
 }
+
+// @media screen and (max-width: 1280px) {
+//  .container {
+//   .left {
+//    padding: 50px 0px 0px 50px;
+//   }
+//  }
+//  .dec1 {
+//   position: absolute;
+//   right: 5%;
+//   top: 5%;
+//  }
+//  .dec2 {
+//   position: absolute;
+//   right: 5%;
+//   bottom: 5%;
+//  }
+// }
 </style>

@@ -102,4 +102,9 @@ nav {
   padding: 36px 50px;
  }
 }
+
+@media screen and (max-width: 400px) {
+ header {
+ }
+}
 </style>
