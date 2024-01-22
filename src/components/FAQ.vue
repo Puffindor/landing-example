@@ -236,6 +236,4 @@ h2 {
 .q.active {
  max-height: 10000px;
 }
-.qestions {
-}
 </style>
