@@ -1,20 +1,23 @@
 <template>
  <div class="container">
+  <img class="dec2" src="../assets/frame1/dec1.svg" />
   <div class="left">
    <img class="star" src="../assets/frame1/star.svg" />
    <img class="dec1" src="../assets/frame1/dec2.svg" />
-   <img class="dec2" src="../assets/frame1/dec1.svg" />
    <!-- <img class="back" src="../assets/frame1/background.png" /> -->
    <span class="date">12 апреля 16:00 - 18:30 • онлайн</span>
-   <h1>Узнайте все о стиле Мемфис</h1>
+   <h1>УЗНАЙТЕ ВСЕ О СТИЛЕ МЕМФИС</h1>
    <p>
     О его влиянии на современный дизайн на нашем вебинаре! Присоединяйтесь
     к нашей лекции и погрузитесь в мир ярких цветов, уникальных форм и смелых
     решений, которые определяют этот стиль
    </p>
-   <router-link to="/registration">
-    <button>ЗАПИСАТЬСЯ НА ЛЕКЦИЮ</button></router-link
-   >
+
+   <button>
+    <router-link class="link" to="/registration">
+     ЗАПИСАТЬСЯ НА ЛЕКЦИЮ
+    </router-link>
+   </button>
   </div>
   <div class="right">
    <img src="../assets/background1-2.png" />
@@ -23,10 +26,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+ methods: {
+  test() {
+   alert("adasd");
+  },
+ },
+};
 </script>
 
 <style lang="scss" scoped>
+.link {
+ color: black;
+ position: relative;
+ z-index: 999999;
+ text-decoration: none;
+}
 .dec1 {
  position: absolute;
  right: 15%;
@@ -129,22 +144,56 @@ export default {};
 }
 
 @media screen and (max-width: 400px) {
+ .dec1 {
+  width: 60px;
+  height: 61px;
+  right: 5%;
+  top: 30%;
+ }
+
+ .dec2 {
+  z-index: 1;
+  width: 93px;
+  height: 61px;
+  right: 5%;
+  bottom: 1%;
+ }
  .container {
   .date {
    display: block;
    font-size: 18px;
   }
   .left {
+   border-right: none;
+   position: relative;
+
    padding: 60px 16px 60px;
+   h1 {
+    width: 50%;
+    font-family: Dela Gothic One;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+   }
    p {
-    font-size: 18px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
    }
    button {
     width: 100%;
     margin-top: 48px;
     height: 9%;
-    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 16px;
+    text-decoration: none;
    }
   }
   .right {

@@ -3,22 +3,22 @@
   <div class="about">
    <frame-1 />
   </div>
-  <frame-2 />
-  <frame-3 />
-  <frame-4 />
-  <frame-5 />
-  <frame-6 />
-  <frame-7 />
+  <frame-2 :isMobile="isMobile" />
+  <frame-3 :isMobile="isMobile" />
+  <frame-4 :isMobile="isMobile" />
+  <frame-5 :isMobile="isMobile" />
+  <frame-6 :isMobile="isMobile" />
+  <frame-7 :isMobile="isMobile" />
   <frame-8 />
   <frame-9 />
   <div class="speakers">
-   <frame-10 />
+   <frame-10 :isMobile="isMobile" />
   </div>
   <div class="faq">
    <FAQ />
   </div>
   <div class="contacts">
-   <the-footer />
+   <the-footer :isMobile="isMobile" />
   </div>
  </div>
 </template>
@@ -38,6 +38,11 @@ import Frame10 from "@/components/Frame10.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import FAQ from "@/components/FAQ.vue";
 export default {
+ data() {
+  return {
+   isMobile: false,
+  };
+ },
  components: {
   Frame1,
   Frame2,
@@ -53,6 +58,12 @@ export default {
   FAQ,
   TheHeader,
  },
+ beforeMount() {
+  if (screen.width < 400) {
+   this.isMobile = true;
+  }
+ },
+
  methods: {
   scroll(el) {
    const scrollTo = document.querySelector(el);

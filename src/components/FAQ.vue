@@ -1,15 +1,15 @@
 <template>
  <div class="container">
-  <img class="dec" src="../assets/faq/dec1.png" />
+  <!-- <img class="dec" src="../assets/faq/dec1.png" /> -->
   <h2>Часто задаваемые вопросы</h2>
   <div class="qestions">
    <div @click="open('q1')" class="q" :class="{ active: q1 }">
     <p>
      Я зарегистрировался на занятие. Что дальше?<img
-      src="../assets/faq/arrow.png"
+      src="../assets/faq/arrow.svg"
      />
     </p>
-    <span>
+    <span v-if="q1">
      <h4>
       Чтобы убедиться, что вы готовы к занятию, вам может понадобиться выполнить
       несколько следующих шагов:
@@ -53,10 +53,10 @@
    <div @click="open('q2')" class="q" :class="{ active: q2 }">
     <p>
      Что делать, если я не вижу трансляцию эфира по ссылке из почты?<img
-      src="../assets/faq/arrow.png"
+      src="../assets/faq/arrow.svg"
      />
     </p>
-    <span>
+    <span v-if="q2">
      <h4>
       Если у вас возникли проблемы с просмотром трансляции эфира по ссылке из
       почты, вам следует предпринять несколько шагов:
@@ -90,8 +90,8 @@
     </span>
    </div>
    <div @click="open('q3')" class="q" :class="{ active: q3 }">
-    <p>Сколько продлится занятие?<img src="../assets/faq/arrow.png" /></p>
-    <span
+    <p>Сколько продлится занятие?<img src="../assets/faq/arrow.svg" /></p>
+    <span v-if="q3"
      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor
      deserunt illum, aspernatur at cupiditate consequuntur! Esse provident
      labore, quam similique voluptatum modi ea? Asperiores modi voluptatum rerum
@@ -101,10 +101,10 @@
    <div @click="open('q4')" class="q" :class="{ active: q4 }">
     <p>
      Что делать, если не смогу присутствовать на занятии?<img
-      src="../assets/faq/arrow.png"
+      src="../assets/faq/arrow.svg"
      />
     </p>
-    <span>
+    <span v-if="q4">
      <h4>
       Если вы не сможете присутствовать на вебинаре, рекомендуется предпринять
       следующие шаги:
@@ -214,11 +214,10 @@ h2 {
 }
 
 .q {
- max-height: 80px;
  overflow: hidden;
  border-bottom: 2px solid #292d35;
- margin-bottom: 20px;
- padding-bottom: 20px;
+ margin-bottom: 28px;
+ padding-bottom: 28px;
 
  p {
   cursor: pointer;
@@ -234,6 +233,55 @@ h2 {
 }
 
 .q.active {
- max-height: 10000px;
+ p {
+  img {
+   transform: rotate(180deg);
+  }
+ }
+}
+
+@media screen and (max-width: 400px) {
+ .container {
+  padding: 60px 16px;
+  h2 {
+   font-family: Dela Gothic One;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-bottom: 40px;
+  }
+  .qestions {
+   .q:last-child {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+   }
+   .q.active {
+    p {
+     img {
+      transform: rotate(180deg);
+     }
+    }
+   }
+   .q {
+    margin-bottom: 28px;
+    span {
+     margin-top: 28px;
+     display: block;
+    }
+    p {
+     font-family: Manrope;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 25px;
+     letter-spacing: 0em;
+     text-align: left;
+     margin: 0;
+    }
+   }
+  }
+ }
 }
 </style>

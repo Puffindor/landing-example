@@ -18,15 +18,20 @@
      <h4>Ингрих Виртгайм</h4>
      <p>
       Ведущий архитектор современности, который первый из советских дизайнеров
-      решился использовать мемфис для дизайна интерьеров..
+      решился использовать мемфис для дизайна интерьеров.
      </p>
     </div>
    </div>
   </div>
-  <img src="../assets/frame10/pic1.svg" />
+  <img v-if="isMobile" src="../assets/frame10/pic2.svg" />
+  <img v-else class="pic" src="../assets/frame10/pic1.svg" />
  </div>
 </template>
-
+<script>
+export default {
+ props: ["isMobile"],
+};
+</script>
 <style lang="scss" scoped>
 p {
  width: 70%;
@@ -66,6 +71,42 @@ h4 {
  display: flex;
  img {
   margin-right: 28px;
+ }
+}
+
+@media screen and (max-width: 400px) {
+ .container {
+  flex-direction: column;
+
+  .left {
+   padding: 60px 16px 0px 16px;
+  }
+ }
+ .article {
+  margin-bottom: 32px;
+  flex-direction: column;
+  img {
+   margin-bottom: 20px;
+   margin-right: 0;
+  }
+  div {
+   h4 {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+   }
+   p {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+   }
+  }
  }
 }
 

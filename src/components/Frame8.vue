@@ -41,6 +41,36 @@ p {
 .left {
  padding: 100px 0px 0px 95px;
 }
+
+@media screen and (max-width: 400px) {
+ .container {
+  flex-direction: column;
+  img {
+   margin: 32px 16px 0px 16px;
+  }
+  .left {
+   padding: 60px 24px;
+   h3 {
+    font-family: Dela Gothic One;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;
+   }
+   p {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+   }
+  }
+ }
+}
+
 @media screen and (max-width: 1280px) {
  h3 {
   width: 100%;

@@ -1,5 +1,5 @@
 <template>
- <the-header @scroll="scroll" />
+ <the-header @scroll="scroll" :isMobile="isMobile" />
  <section>
   <main>
    <router-view v-slot="{ Component }">
@@ -16,9 +16,25 @@ export default {
  components: {
   TheHeader,
  },
+ computed: {
+  isMobile() {
+   if (screen.width < 400) {
+    return true;
+   }
+   return false;
+  },
+  scrollHeight() {
+   if (screen.width < 400) {
+    return "calc(100% - 100px)";
+   }
+   return "calc(100% - 128px)";
+  },
+ },
  methods: {
   scroll(el) {
-   this.$refs.landing.scroll(el);
+   setTimeout(() => {
+    this.$refs.landing.scroll(el);
+   }, 0);
   },
  },
 };
@@ -32,7 +48,7 @@ export default {
  box-sizing: border-box;
 }
 #app {
- height: 100vh;
+ height: 100dvh;
  overflow: hidden;
 }
 h3 {
@@ -53,7 +69,7 @@ p {
 }
 section {
  width: 100vw;
- height: calc(100% - 128px);
+ height: v-bind(scrollHeight);
  display: flex;
  justify-content: center;
 }
